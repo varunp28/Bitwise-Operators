@@ -17,11 +17,21 @@ Text Editor or IDE (Code::Blocks, VS Code, Dev C++, etc.)
 THEORY:
 Bitwise operators operate directly on the binary representation of integers. They are primarily used for low-level programming, such as in device drivers, embedded systems, and performance-critical code.
 
-Types of Bitwise Operators in C++:
-Operator	Description	Example (a = 5, b = 3)	Binary Result
-&	Bitwise AND	a & b = 1	0101 & 0011 = 0001
-`	`	Bitwise OR	`a
-^	Bitwise XOR	a ^ b = 6	0101 ^ 0011 = 0110
-~	Bitwise NOT (One's complement)	~a = -6	~0101 = 1010 (in 2's complement)
-<<	Left Shift	a << 1 = 10	0101 << 1 = 1010
->>	Right Shift	a >> 1 = 2	0101 >> 1 = 0010
+The main Bitwise Operators in C++ are:
+& (Bitwise AND): Returns 1 only if both bits are 1.
+Example: 5 & 3 results in 1 because 0101 & 0011 = 0001.
+
+| (Bitwise OR): Returns 1 if at least one of the bits is 1.
+Example: 5 | 3 results in 7 because 0101 | 0011 = 0111.
+
+^ (Bitwise XOR): Returns 1 if the bits are different.
+Example: 5 ^ 3 results in 6 because 0101 ^ 0011 = 0110.
+
+~ (Bitwise NOT): Inverts all the bits (also called one's complement).
+Example: ~5 results in -6.
+
+<< (Left Shift): Shifts bits to the left, filling with 0 on the right.
+Example: 5 << 1 results in 10 because it moves all bits one place to the left.
+
+>> (Right Shift): Shifts bits to the right, discarding bits on the right.
+Example: 5 >> 1 results in 2.
